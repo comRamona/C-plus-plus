@@ -1,2 +1,2 @@
 # C-plus-plus
-fun stuff
+the core purpose of this is individual learning
