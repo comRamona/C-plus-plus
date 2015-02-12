@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1423669200 source:/home/ramona/Documents/git-repos/C-plus-plus/UnorderedMap/main.cpp
+	<iostream>
+	<map>
+
