@@ -7,7 +7,7 @@ using namespace std;
 vector<int> L[10000];
 queue<int> q;
 queue<int> f;
-bool vis[10000];
+bool vis[10000],viz[10000];
 
 void BFS(int r)
 {
@@ -25,6 +25,13 @@ void BFS(int r)
     }
 }
 
+void DFS(int r) {
+viz[r]=true;
+cout<<r<<" ";
+vector<int>::iterator it;
+for(it=L[r].begin();it!=L[r].end();it++)
+    if(!viz[*it]) DFS(*it);
+}
 int main()
 {   int n,m,r,x,y,i;
     cin>>n>>m>>r;
@@ -34,7 +41,9 @@ int main()
            L[y].push_back(x);
        }
      BFS(r);
-     cout<<f.back();      //ultimul parcurs(deepest node)
-     while(!f.empty()) {int p=f.front(); f.pop(); cout<<p;}
+     cout<<f.back()<<endl;   //ultimul parcurs(deepest node) using BFS
+     while(!f.empty()) {int p=f.front(); f.pop(); cout<<p<<" ";}
+     cout<<endl;  //BFS
+     DFS(r);
     return 0;
 }

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1424210302 source:c:\users\rami\desktop\c-plus-plus\graphsandbfs\main.cpp
+	<iostream>
+	<vector>
+	<queue>
+	<iterator>
+
