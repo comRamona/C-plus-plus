@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1425319117 source:/home/rama/Desktop/C++/PlsWork/main.cpp
+	<fstream>
+	<iostream>
+	<string>
+
